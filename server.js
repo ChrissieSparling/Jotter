@@ -6,7 +6,7 @@ const db = require("./db/db.json")
 const generateUUId = require("unique-identifier")
 const fs = require("fs")
 
-//what port we are using
+//what port we are working at
 const PORT = 3000;
 
 app.use(express.static("public"))
@@ -14,6 +14,7 @@ app.use(express.static("public"))
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
 
+//these are the html routes (view routes)
 app.get("/", (req, res)=>{
     res.sendFile(path.join(__dirname, `./public/index.html`))
 })
@@ -22,6 +23,7 @@ app.get("/notes", (req, res)=>{
     res.sendFile(path.join(__dirname, `./public/notes.html`))
 })
 
+//these are our api routes (controller routes)
 app.get("/api/notes/", (req, res)=>{
     res.sendFile(path.join(__dirname, `./db/db.json`))
 })
@@ -35,10 +37,11 @@ app.delete("/api/notes/:id", (req,res)=>{
 
     res.json({"notes": "deletes"})
 })
-//function being called
+
 app.post("/api/notes", (req, res)=>{
     console.log(req.body);
     uniqueVal = generateUUId()
+    //new note is the (model) main)
     const newNote = {
         title: req.body.title,
         text: req.body.text,
