@@ -4,12 +4,11 @@
   "description": "this is a note-taking application",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.2",
     "inquirer": "^8.2.0",
     "nodemon": "^2.0.14",
     "unique-identifier": "^1.0.0"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
