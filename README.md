@@ -12,3 +12,4 @@ This Note Taker (Jotter) application will use an Express.js back end and will sa
 # links to the deployed site 
 https://github.com/ChrissieSparling/Jotter
 https://chrissiesparling.github.io/Jotter/
+https://git.heroku.com/jotter-notezz.git
