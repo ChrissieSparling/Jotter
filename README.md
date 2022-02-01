@@ -6,3 +6,9 @@ This Note Taker (Jotter) application will use an Express.js back end and will sa
 
 
 ## Mock-Up
+* [jotter: Notes](./Assets/11-express-homework-demo-01.png)
+* [jotter: balances](./Assets/11-express-homework-demo-02.png)
+
+# links to the deployed site 
+https://github.com/ChrissieSparling/Jotter
+https://chrissiesparling.github.io/Jotter/
